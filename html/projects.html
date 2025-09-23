@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects By R. M.</title>
+
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/colors.css">  
+    <link rel="stylesheet" href="../css/animations.css">  
+    
+    <script src="../js/components/sidebar.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark d-lg-none sticky-top" id="topbar">
+        <div class="container-fluid">
+            <a class="navbar-brand txt-light" href="#">R. Morsoleto</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarOffcanvas"
+                aria-controls="sidebarOffcanvas">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-lg-3 sidebar d-none d-lg-block", id="sidebar">
+                <info-sidebar></info-sidebar>
+            </div>
+
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebarOffcanvas"
+                aria-labelledby="sidebarOffcanvasLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title txt-light" id="sidebarOffcanvasLabel">Menu</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <info-sidebar></info-sidebar>
+                </div>
+            </div>
+
+            <!-- Main Content Area -->
+            <main class="col-lg-8">
+                <div class="m-4 col-md-12 p-4 p-md-5 pb-0 border rounded-3" id="main-content">
+                    <p class="txt-secondary mb-0">Minha coleção de projetos e contribuições</p>
+                    <p class="fs-3 txt-primary">Projetos</p>
+                    
+                    <hr class="grow-from-center">
+
+                    <div id="projects-container" class="container m-0"></div>
+
+                </div>
+            </main>
+
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- Our repository script -->
+    <script type="module" src="../js/scripts/getRepository.js"></script>
+
+</body>
+
+</html>
