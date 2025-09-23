@@ -1,0 +1,38 @@
+:root {
+    --blue: #0073cf;
+    --gray1: #2D2D2D;
+    --gray2: #6C757D;
+    --gray3: #F8F9FA;
+    --gray3-less_focus: #F8F9FAB3;
+    /* --white: #FFFFFF; */
+    --orange: #FF6B35;
+}
+
+/* Sidebar related */
+#sidebarOffcanvas,
+#topbar,
+#sidebar {
+    background-color: var(--gray1);
+}
+
+body,
+main {
+    background-color: var(--gray2);
+}
+
+#main-content {
+    background-color: var(--gray3);
+}
+
+/* Text */
+.txt-dark {
+    color: var(--gray1);
+}
+
+.txt-light {
+    color: var(--gray3);
+}
+
+.txt-secondary {
+    color: var(--gray2);
+}
