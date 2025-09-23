@@ -6,7 +6,7 @@ const projectsContainer = document.getElementById('projects-container')
 
 async function createDiv(){
     const componentDiv = document.createElement('div')
-    componentDiv.className = `row`
+    componentDiv.className = `row mt-1`
     return componentDiv
 }
 
