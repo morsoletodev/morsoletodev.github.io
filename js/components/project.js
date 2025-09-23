@@ -6,7 +6,7 @@ export default function createProjectComponent(projectData) {
 
     // name
     const nameElement = document.createElement('p') 
-    nameElement.className = "fs-3 txt-primary m-0" 
+    nameElement.className = "fs-4 txt-primary m-0" 
     nameElement.textContent = projectData.Title 
     componentDiv.appendChild(nameElement) 
 
@@ -53,7 +53,7 @@ export default function createProjectComponent(projectData) {
         componentDiv.appendChild(caseStudyElement)
     }
 
-    // case study section
+    // paper link section
     if (projectData.PaperLink) {
         const paperElement = document.createElement('a')
         paperElement.setAttribute('target', '_blank')

@@ -15,13 +15,13 @@ export default function createCaseStudy(projectData){
 
     // Tech Stack
     const pElement = document.createElement('p')
-    pElement.className = 'txt-secondary col-3'
+    pElement.className = 'txt-secondary col-3 m-0'
     pElement.textContent = [...projectData.Skills, ...projectData.CaseStudy.AdditionalTech].join(' | ')
     textDiv.appendChild(pElement)
 
     // Executive description
     const p2Element = document.createElement('p')
-    p2Element.className = 'txt-light col-9'
+    p2Element.className = 'txt-light col-9 m-0'
     p2Element.textContent = projectData.CaseStudy.Description
     textDiv.appendChild(p2Element)
 
