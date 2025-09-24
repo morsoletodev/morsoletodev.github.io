@@ -1,0 +1,30 @@
+[
+    {
+        "Title": "Brazilian Public Health Data Pipeline",
+        "Description": "Um pipeline de dados simplificado projetado para elevar os dados da saúde pública brasileira a um nível pronto para análise, utilizando arquivos YAML simples. Totalmente integrado com Postgres.",
+        "Skills": ["Python", "Postgres", "Data Pipeline"],
+        "Link": "https://github.com/GOPAD-Datasus/ETL-DataSUS",
+        "CaseStudy": {
+            "AdditionalTech": ["PyYAML", "Pandas"],
+            "Description": "Pipeline de dados em Python para processar e padronizar dados do SUS, utilizando arquivos YAML para configuração e integração com Postgres. Como responsável, desenvolvi uma solução flexível que permite ingestão em banco, geração de arquivos Parquet e adição simplificada de novas etapas de processamento, elevando a qualidade dos dados para análise."
+        }
+    },
+    {
+        "Title": "Mineração de Regras na Saúde Materno-Infantil",
+        "Description": "Mineração de regras de associação do ano de 2023 usando o algoritmo Efficient Apriori, com o objetivo de identificar características maternas que possam levar a desfechos pré-natais adversos.",
+        "Skills": ["Python", "Machine Learning", "Regras de Associação"],
+        "Link": "https://github.com/GOPAD-Datasus/Paper_E-Dohad-Apriori",
+        "CaseStudy": {
+            "AdditionalTech": ["Pandas"],
+            "Description": "Análise de dados do SINASC utilizando mineração de regras de associação (algoritmo Apriori) para identificar fatores maternos associados a desfechos pré-natais adversos. Colaborei com equipe de saúde para implementar a solução em Python, garantindo que as necessidades do domínio fossem atendidas pelos resultados."
+        }
+    },
+    {
+        "Title": "Análise de Riscos Pré-Natais com SINASC",
+        "Description": "Mineração de regras de associação em dados do SINASC com foco na identificação de fatores de risco pré-natais. O trabalho foi publicado em livro acadêmico (Springer).",
+        "Skills": ["Python", "Machine Learning", "Regras de Associação"],
+        "Link": "https://github.com/GOPAD-Datasus/Paper_B-ICISMED-Apriori",
+        "PaperLink": "https://link.springer.com/book/9783031996986"
+    }
+    
+]
