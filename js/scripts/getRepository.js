@@ -16,8 +16,14 @@ async function prepare_buttons() {
     buttons.forEach(button => {
         button.addEventListener('click', (event) => {
             const target = document.getElementById(button.dataset.target)
+            const elements = document.getElementsByClassName('cs:hidden')
+
+            for (let i = 0; i < elements.length; i++) {
+                elements[i].style.display = 'none';
+            }
 
             if (target.style.display === 'none') {
+                console.log(target)
                 target.style.display = 'flex'
             } else {
                 target.style.display = 'none'

@@ -2,7 +2,7 @@ export default function createCaseStudy(projectData){
     // Main div
     const componentDiv = document.createElement('div')
     componentDiv.id = `cs_${projectData.Title}`
-    componentDiv.className = 'txt-light col-lg-12 g-4 p-4 rounded-3 my-1 fade-in'
+    componentDiv.className = 'txt-light col-lg-12 g-4 p-4 rounded-3 my-1 fade-in cs:hidden'
     componentDiv.style = `
         background-color: var(--gray1);
         margin: auto;
