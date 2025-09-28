@@ -19,6 +19,9 @@ async function prepare_buttons() {
             const elements = document.getElementsByClassName('cs:hidden')
 
             for (let i = 0; i < elements.length; i++) {
+                if (elements[i].id == button.dataset.target)
+                    continue
+
                 elements[i].style.display = 'none';
             }
 
