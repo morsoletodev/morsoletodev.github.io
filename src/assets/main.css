@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+
+:root {
+  /* Main colors */
+  --gray1: #2d2d2d;
+  --gray2: #6c757d;
+  --gray3: #f8f9fa;
+  --gray3-less_focus: #f8f9fab3;
+  --blue: #0073cf;
+  --orange: #ff6b35;
+
+  /* Additional */
+  --orange-bg: #fddbceb3;
+  --orange-text: #ff4a09;
+  --white: #ffffff;
+  --project-gray: #b7b7b76e;
+  --project-gray-light: #d0d0d06e;
+  --blue-bg: #b3ddff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
