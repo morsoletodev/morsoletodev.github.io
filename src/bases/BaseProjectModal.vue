@@ -28,9 +28,9 @@ onUnmounted(() => window.removeEventListener('keydown', handleEscape))
 
         <div
           id="header"
-          class="relative w-full max-w-2xl max-h-[90vh] overflow-y-auto rounded-2xl shadow-2xl"
+          class="relative w-full max-w-3xl max-h-[90vh] overflow-y-auto rounded-2xl shadow-2xl"
         >
-          <div class="sticky top-0 p-6 flex justify-between items-center">
+          <div class="sticky top-0 p-6 pb-1 flex justify-between items-center">
             <h2 id="title" class="text-2xl font-bold">{{ project.Title }}</h2>
             <button
               @click="emit('close')"
@@ -52,12 +52,12 @@ onUnmounted(() => window.removeEventListener('keydown', handleEscape))
             </button>
           </div>
 
-          <div class="p-8 space-y-6">
+          <div class="py-8 px-6 space-y-6">
             <section>
               <h4 id="projectHeader" class="text-sm font-bold uppercase tracking-widest mb-2">
                 Project Overview
               </h4>
-              <p id="projectDesc" class="leading-relaxed text-lg">
+              <p id="projectDesc" lang="pt-br" class="leading-relaxed lg:text-lg text-md hyphens-auto">
                 {{ project.AddDesc }}
               </p>
             </section>
@@ -77,7 +77,7 @@ onUnmounted(() => window.removeEventListener('keydown', handleEscape))
               </div>
             </section>
 
-            <div class="pt-2 flex gap-4">
+            <div v-if="project.Link" class="pt-2 flex gap-4">
               <a
                 :href="project.Link"
                 target="_blank"

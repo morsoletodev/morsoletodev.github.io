@@ -45,7 +45,7 @@ const isModalOpen = ref(false)
       <p id="desc" class="text-sm mt-3 lg:line-clamp-4 line-clamp-5">{{ Desc }}</p>
     </div>
 
-    <div class="flex flex-wrap gap-2 mb-6">
+    <div class="flex flex-wrap gap-2 mb-6 mt-auto">
       <span
         v-for="skill in Skills"
         :key="skill"
