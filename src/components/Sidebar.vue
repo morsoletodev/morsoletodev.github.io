@@ -88,6 +88,6 @@ button:hover {
 }
 
 li a:hover {
-  color: var(--gray3)
+  color: var(--gray3);
 }
 </style>

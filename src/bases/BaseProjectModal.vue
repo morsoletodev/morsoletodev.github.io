@@ -57,7 +57,11 @@ onUnmounted(() => window.removeEventListener('keydown', handleEscape))
               <h4 id="projectHeader" class="text-sm font-bold uppercase tracking-widest mb-2">
                 {{ $t('baseProjectModal.overview') }}
               </h4>
-              <p id="projectDesc" lang="pt-br" class="leading-relaxed lg:text-lg text-md hyphens-auto">
+              <p
+                id="projectDesc"
+                :lang="$t('lang')"
+                class="leading-relaxed lg:text-lg text-md hyphens-auto"
+              >
                 {{ project.AddDesc }}
               </p>
             </section>

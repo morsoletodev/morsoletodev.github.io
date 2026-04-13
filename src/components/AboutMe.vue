@@ -168,6 +168,6 @@ hr {
 }
 
 #text-orange {
-  color: var(--orange)
+  color: var(--orange);
 }
 </style>
