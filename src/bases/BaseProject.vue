@@ -39,7 +39,7 @@ const isModalOpen = ref(false)
           :href="PaperLink"
           target="_blank"
           class="text-[10px] font-bold px-2 py-1 rounded"
-          >Paper</a
+          >{{ $t('baseProject.paper') }}</a
         >
       </div>
       <p id="desc" class="text-sm mt-3 lg:line-clamp-4 line-clamp-5">{{ Desc }}</p>
@@ -65,7 +65,7 @@ const isModalOpen = ref(false)
         id="CaseStudyButton"
         class="px-4 py-2 rounded-lg text-sm transition-colors"
       >
-        Read Case Study
+        {{ $t('baseProject.study') }}
       </button>
 
       <a v-if="Link" id="GithubLink" :href="Link" target="_blank" class="transition-colors ms-auto pt-1.5">

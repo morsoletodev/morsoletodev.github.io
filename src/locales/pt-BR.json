@@ -1,0 +1,129 @@
+{
+  "lang": "pt-BR",
+
+  "sec_1": "Sobre mim",
+  "sec_2": "Projetos",
+
+  "sideBar": {
+    "subTitle": "Desenvolvedor Python \\| Data Analytics"
+  },
+
+  "aboutMe": {
+    "cit_1": "\"Nada na vida deve ser temido, somente compreendido. ",
+    "cit_2": "Agora é a hora de compreender mais",
+    "cit_3": ".\" — Marie Curie",
+    "bio_text": "Sou um <span class=\"font-semibold\">Cientista de Dados</span> focado em dar vida a projetos, mesmo quando envolvem dados bagunçados. Prefiro escrever <span class=\"font-semibold\">código claro</span> em vez de código complexo, reprodutibilidade com <span class=\"font-semibold\">Docker</span> e <span class=\"font-semibold\">Poetry</span>, e <span class=\"font-semibold\">documentação simples</span> em vez de nenhuma. Tudo isso acompanhado de uma obsessão pouco saudável por café.",
+    "edu": "Formação Acadêmica",
+    "edu_i1": "Mestrado em Aprendizado de Máquina e Mineração de Dados - USP",
+    "edu_badge": "Em andamento!",
+    "edu_i2": "Bacharelado em Ciência da Computação - IFSULDEMINAS",
+    "conn": "Vamos Conversar"
+  },
+
+  "baseProject": {
+    "paper": "Artigo",
+    "study": "Leia o Estudo de Caso"
+  },
+
+  "baseProjectModal": {
+    "overview": "Visão Geral",
+    "stack": "Conjunto de Tecnologias",
+    "repo": "Veja o Repositório"
+  },
+
+  "projects": [
+    {
+      "Star": true,
+      "Title": "Hydeno-Framework",
+      "Desc": "Framework de Pipeline de Dados Híbrido e Otimização de Ensemble. Inclui o mecanismo de pareamento de entidades Splink e um pipeline de pesquisa exploratória para emparelhamento de estimadores/samplers e HPO.",
+      "Skills": ["Data Pipeline", "Ensemble Models", "HPO"],
+      "Link": "https://github.com/morsoletodev/Hydeno-Framework",
+
+      "AddSkills": ["Python", "Splink", "Docker"],
+      "AddDesc": "Após consolidar diversas pesquisas sobre mortalidade infantil e integração de dados no contexto do DataSUS, identifiquei a necessidade de unificar e evoluir essas soluções para um ecossistema independente e modular. O objetivo era criar um ambiente que superasse as limitações de ferramentas isoladas e permitisse uma busca exaustiva pela melhor configuração de modelos de Machine Learning. Minha responsabilidade foi projetar uma arquitetura end-to-end capaz de integrar uma engine de Resolução de Entidades de alta performance a um pipeline de pesquisa exploratória. O foco central era automatizar a otimização de modelos ensemble e métodos de amostragem, garantindo que o fluxo fosse totalmente reprodutível para outros pesquisadores. Desenvolvi o framework em Python, estruturando-o como uma evolução direta dos projetos KDMiLe e das metodologias de meu TCC. Implementei o sistema de pareamento de dados utilizando a engine Splink, reduzindo significativamente as comparações desnecessárias entre registros. Fundi as lógicas de predição e balanceamento de classes, criando um pipeline capaz de testar diversas combinações de estimadores e samplers. Adicionalmente, introduzi uma camada de Otimização de Hiperparâmetros (HPO) para refinar cada par de modelos e utilizei Docker e Docker Compose para orquestrar o ambiente e garantir a fidelidade da execução em qualquer máquina. A solução resultou em um framework robusto que centraliza a ingestão, o linkage de dados e a otimização de modelos, permitindo análises ágeis e profundas diretamente via notebooks. Ao garantir a reproducibilidade através de containers, o projeto facilitou a continuidade das pesquisas sobre predição de mortalidade infantil, oferecendo um padrão de excelência técnica para a experimentação de modelos complexos."
+    },
+    {
+      "Star": true,
+      "Title": "etlSUS",
+      "Desc": "Pipeline de dados opinionado projetado para facilitar a análise dos bancos de dados SINASC e SIM do DataSUS, podendo ser reconfigurado a partir de arquivos YAML.",
+      "Skills": ["Python", "ETL Pipeline", "CI/CD"],
+      "Link": "https://github.com/GOPAD-Datasus/etlSUS",
+
+      "AddSkills": ["PyYAML", "Pandas"],
+      "AddDesc": "Os bancos de dados públicos SIM e SINASC exigem etapas complexas de pré-processamento e possuem documentações que dificultam a extração de regras de negócio. Frequentemente, esse trabalho era repetido em múltiplos projetos, gerando redundância e perda de conhecimento técnico entre as execuções. Identifiquei a necessidade de centralizar e automatizar esses processos para acelerar o ciclo de vida dos projetos de Ciência de Dados e garantir a consistência das análises. Desenvolvi um pipeline de dados independente e modular utilizando arquivos de configuração `.yaml`. A solução foi projetada para realizar desde a ingestão e limpeza até o merge de arquivos e a carga automática em bancos de dados relacionais, permitindo que o usuário customize o fluxo conforme a necessidade. A separação das responsabilidades permitiu que o pipeline evoluísse de forma isolada, elevando o padrão de qualidade dos dados. Como resultado direto, houve uma redução significativa no tempo gasto com ETL, permitindo maior prioridade no desenvolvimento e treinamento de modelos de Machine Learning."
+    },
+    {
+      "Star": true,
+      "Title": "TCC",
+      "Desc": "Código e análises desenvolvidos para o Trabalho de Conclusão de Curso (TCC) intitulado Estratificação de Risco para Mortalidade Infantil no Brasil com Entity Matching e Clusterização.",
+      "Skills": ["Python", "Clusterização", "Entity Matching"],
+      "Link": "https://github.com/morsoletodev/TCC",
+
+      "AddSkills": ["Splink", "Calinski Harabasz", "GaussianMixture"],
+      "AddDesc": "Como projeto de conclusão de curso, busquei evoluir as metodologias utilizadas em trabalhos anteriores visando a análise de mortalidade infantil no Brasil, a partir da integração de dados e da classificação de perfis de risco. O objetivo era superar as limitações de ferramentas anteriores e criar um modelo de estratificação de risco capaz de prever desfechos desfavoráveis, similar a um modelo preditivo tradicional. Migrei a arquitetura de Entity Matching do Record Linkage Toolkit para a biblioteca Splink, alcançando maior escalabilidade na unificação dos bancos SINASC e SIM. Paralelamente, implementei uma lógica de clusterização como proxy para predição, segmentando os dados em 6 clusters distintos, classificados em 3 níveis de risco: Baixo (3), Médio (2), Alto (1). A nova abordagem de pareamento e a estrutura de 6 grupos permitiram o agrupamento de registros que vieram a óbito no grupo de alto risco. Esse resultado permite uma visão granular e acionável sobre a realidade dos óbitos, oferecendo uma ferramenta de estratificação mais robusta e eficiente que as metodologias preliminares."
+    },
+    {
+      "Title": "KDMiLe-Prediction",
+      "Desc": "Predição de mortalidade infantil baseada na união das bases de dados SINASC e SIM através de técnicas de Entity Matching.",
+      "Skills": ["Python", "Machine Learning", "Entity Matching"],
+      "Link": "https://github.com/GOPAD-Datasus/KDMiLe-Prediction",
+      "PaperLink": "https://sol.sbc.org.br/index.php/kdmile/article/view/37216",
+      "AddSkills": [],
+      "AddDesc": "Dentro do grupo de pesquisa GOPAD, havia o desafio de validar se bases de dados públicas brasileiras, quando integradas, possuíam poder preditivo suficiente para antecipar óbitos infantis. Para uma melhor validação, o estudo de algoritmos de balanceamento se tornou seu próprio projeto, nomeado KDMiLe-Balancing. Minha responsabilidade foi definir e implementar o melhor algoritmo de predição, refinando o processo de união das bases para garantir a qualidade dos dados de entrada. Aprimorei a metodologia de Entity Matching utilizada no projeto Josif-Linkage para reduzir ruídos. Em seguida, desenvolvi uma modelagem preditiva utilizando apenas os bancos SINASC e SIM, focando na simplicidade e interpretabilidade dos hiperparâmetros. O modelo alcançou resultados preliminares satisfatórios, provando a viabilidade técnica da solução. O trabalho foi aceito e publicado na conferência KDMiLe, consolidando a metodologia de integração proposta pelo grupo."
+    },
+    {
+      "Title": "KDMiLe-Balancing",
+      "Desc": "Análise de métodos de Oversampling, Undersampling e Híbridos aplicados em dados de mortalidade infantil do DataSUS.",
+
+      "Skills": ["Python", "Machine Learning", "Class Balancing"],
+      "Link": "https://github.com/GOPAD-Datasus/KDMiLe-Balancing",
+
+      "PaperLink": "https://sol.sbc.org.br/index.php/kdmile/article/view/37209",
+
+      "AddSkills": [],
+      "AddDesc": "Dados de mortalidade infantil são inerentemente desbalanceados, o que compromete a performance de modelos de Machine Learning que tendem a ignorar a classe minoritária (o óbito). Necessitando de uma avaliação sistemática dos diferentes algoritmos de balanceamento de dados para identificar qual técnica oferece a melhor confiabilidade e detecção para o problema em questão. Realizei um estudo comparativo exaustivo aplicando métodos de amostragem no dataset integrado do DataSUS. Testei abordagens como Random Undersampling (RU), Random Oversampling (ROS), Edited Nearest Neighbors (ENN) entre outros. Identifiquei que o método RU foi superior para maximizar a detecção, o ROS para garantir a confiabilidade do modelo e o ENN para o equilíbrio geral (F1-Score). As descobertas foram publicadas na conferência KDMiLe, servindo de guia para futuros estudos do grupo."
+    },
+    {
+      "Title": "DOHaD-Apriori",
+      "Desc": "Mineração de regras de associação do ano de 2023 usando o algoritmo Efficient Apriori, com o objetivo de identificar características maternas que possam levar a desfechos pré-natais adversos.",
+      "Skills": ["Python", "Machine Learning", "Data Mining"],
+      "Link": "https://github.com/GOPAD-Datasus/Dohad-Apriori",
+
+      "AddSkills": ["Pandas", "Regras de Associação"],
+      "AddDesc": "Em uma iniciativa multidisciplinar com a equipe de enfermagem do GOPAD, buscamos identificar características maternas que influenciam diretamente o indicador de saúde neonatal APGAR no 5º minuto. Visando superar as limitações de performance encontradas no projeto ICISMED-Apriori e criar um fluxo de trabalho que permitisse a validação técnica e clínica das regras de associação geradas. Substituí o algoritmo tradicional pelo Efficient Apriori, otimizando o consumo de recursos e permitindo uma filtragem mais rigorosa das regras. Trabalhei em comunicação constante com especialistas em saúde para traduzir variáveis clínicas em parâmetros de mineração, focando especificamente no consequente APGAR-5. A nova arquitetura permitiu a extração de regras com alto valor clínico, que foram validadas pela equipe de enfermagem. O resumo do trabalho e suas descobertas foram publicados na conferência internacional DOHaD."
+    },
+    {
+      "Title": "FIGO-Maternal",
+      "Desc": "Análise exploratória e predição da mortalidade de mães negras, visando encontrar discrepâncias raciais no atendido obstétrico. Trabalho apresentado na FIGO.",
+      "Skills": ["Python", "Machine Learning", "PowerBI"],
+      "Link": "",
+
+      "PaperLink": "https://obgyn.onlinelibrary.wiley.com/doi/10.1002/ijgo.70503",
+
+      "AddSkills": ["Pandas", "Scikit-learn"],
+      "AddDesc": "Atuei em um projeto estratégico do GOPAD voltado para a mortalidade materna, colaborando com uma equipe diversificada de profissionais das áreas de computação, enfermagem e administração. Tive a tarefa de suprir a necessidade do grupo por análises visuais dinâmicas e modelos preditivos que pudessem acelerar a escrita científica e a tomada de decisão clínica. Desenvolvi dashboards no PowerBI com navegação segmentada, permitindo que a equipe consultasse características maternas e resultados preditivos de forma ágil durante reuniões de pesquisa. Em paralelo, utilizei Scikit-learn para a modelagem dos dados, mantendo um canal de comunicação ativo para alinhar os resultados técnicos aos objetivos do artigo. A agilidade proporcionada pelos relatórios visuais otimizou significativamente o tempo de redação da equipe. Como consequência, o trabalho foi publicado no prestigiado periódico da FIGO (International Journal of Gynecology & Obstetrics)."
+    },
+    {
+      "Title": "ICISMED-Apriori",
+      "Desc": "Mineração de regras de associação em dados do SINASC com foco na identificação de fatores de risco pré-natais. O trabalho foi publicado em livro acadêmico (Springer).",
+      "Skills": ["Python", "Machine Learning", "Data Mining"],
+      "Link": "https://github.com/GOPAD-Datasus/ICISMED-Apriori",
+
+      "PaperLink": "https://link.springer.com/chapter/10.1007/978-3-031-99699-3_25",
+
+      "AddSkills": ["Pandas", "mlxtend", "Regras de Associação"],
+      "AddDesc": "Como pesquisador no Grupo de Pesquisa em Organização, Processamento e Análise de Dados (GOPAD), conduzi um estudo para identificar relações entre perfis maternos e desfechos obstétricos/neonatais desfavoráveis, utilizando a base de dados pública SINASC 2022. O desafio central era aplicar técnicas de mineração de dados para extrair **regras de associação** em um grande volume de dados. O algoritmo Apriori, implementado pela biblioteca mlxtend, apresentava gargalos críticos de performance, como alto consumo de memória e baixa eficiência computacional para processar variáveis numéricas e grandes conjuntos de registros. Desenvolvi uma estratégia híbrida para otimizar o processamento. Implementei uma etapa preliminar de clusterização via K-means para segmentar a base de dados em grupos homogêneos, reduzindo a dimensionalidade e a complexidade dos conjuntos de itens passados ao algoritmo Apriori. Essa arquitetura permitiu contornar as limitações de hardware e acelerar significativamente a descoberta de padrões. A abordagem resultou na identificação de 10 regras de associação cruciais, distribuídas em 6 perfis maternos que descrevem com precisão os fatores de risco obstétrico. Pela relevância técnica e científica, o trabalho foi aceito e publicado pela editora Springer na conferência internacional ICISMED, validando a eficácia da metodologia proposta."
+    },
+    {
+      "Title": "Josif-Linkage",
+      "Desc": "Resolução de entidades presentes nos bancos de dados públicos SINASC e SIM utilizando a biblioteca Record Linkage Toolkit.",
+      "Skills": ["Python", "Entity Matching"],
+      "Link": "https://github.com/GOPAD-Datasus/JOSIF-Linkage",
+
+      "PaperLink": "https://josif.ifsuldeminas.edu.br/ojs/index.php/anais/article/view/2528",
+
+      "AddSkills": ["First Project", "Record Linkage Toolkit"],
+      "AddDesc": "Como parte do Grupo de Pesquisa em Organização, Processamento e Análise de Dados (GOPAD), atuei no estudo preliminar de integração entre os bancos de dados públicos SIM e SINASC para análise de óbitos infantis. O principal desafio foi a ausência de identificadores únicos, o que impedia a utilização de métodos de junção determinísticos. Necessitando assim da implementação de uma estratégia de Entity Matching probabilístico capaz de unificar os registros de forma confiável, permitindo futuras análises sobre os fatores que influenciam a mortalidade infantil. Desenvolvi uma solução em Python utilizando a biblioteca Record Linkage Toolkit. Estruturei a estratégia de blocking baseada em data de nascimento e município de residência para otimizar o processamento. Para a comparação de registros, utilizei atributos como peso ao nascer, tipo de parto, semanas de gestação e escolaridade da mãe, garantindo a precisão do vínculo entre as bases. Os resultados preliminares revelaram disparidades demográficas críticas. A base integrada identificou uma presença 10% superior de registros de mães adolescentes e um aumento de 5% na identificação de mulheres negras e pardas. Esse estudo foi publicado na 17° Jornada Científica e Tecnológica do IFSULDEMINAS."
+    }
+  ]
+}

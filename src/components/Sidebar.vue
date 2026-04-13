@@ -14,16 +14,16 @@ const isOpen = ref(false)
     <img src="/bracis_cut.jpg" alt="Profile Picture" class="rounded-full my-3 border-3" />
 
     <h3 class="font-serif text-2xl font-bold mt-4">R. Morsoleto</h3>
-    <p>Python Developer | Data Analytics</p>
+    <p>{{ $t('sideBar.subTitle') }}</p>
 
     <hr class="my-4" />
 
     <ul class="text-lg text-left ml-8">
       <li class="my-2">
-        <a href="#sec:AboutMe" @click="isOpen = !isOpen">About me</a>
+        <a href="#sec:AboutMe" @click="isOpen = !isOpen">{{ $t('sec_1') }}</a>
       </li>
       <li class="my-2">
-        <a href="#sec:Projects" @click="isOpen = !isOpen">Projects</a>
+        <a href="#sec:Projects" @click="isOpen = !isOpen">{{ $t('sec_2') }}</a>
       </li>
     </ul>
 

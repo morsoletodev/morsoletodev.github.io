@@ -1,0 +1,116 @@
+{
+  "lang": "en-US",
+
+  "sec_1": "About me",
+  "sec_2": "Projects",
+
+  "sideBar": {
+    "subTitle": "Python Developer \\| Data Analytics"
+  },
+
+  "aboutMe": {
+    "cit_1": "\"Nothing in life is to be feared, it is only to be understood. ",
+    "cit_2": "Now is the time to understand more",
+    "cit_3": ".\" — Marie Curie",
+    "bio_text": "I am a <span class=\"font-semibold\">Data Scientist</span> focused on bringing projects to life, even when messy data is involved. I prefer writing <span class=\"font-semibold\">clear code</span> over clever code, reproducibility with <span class=\"font-semibold\">Docker</span> and <span class=\"font-semibold\">Poetry</span>, and <span class=\"font-semibold\">simple documentation</span> over nothing at all. All of this is bundled with an unhealthy obsession for coffee.",
+    "edu": "Education",
+    "edu_i1": "Master\"s Degree in Machine Learning and Data Mining - USP",
+    "edu_badge": "Ongoing!",
+    "edu_i2": "Bachelor\"s Degree in Computer Science - IFSULDEMINAS",
+    "conn": "Let\"s Connect"
+  },
+
+  "baseProject": {
+    "paper": "Paper",
+    "study": "Read Case Study"
+  },
+
+  "baseProjectModal": {
+    "overview": "Project Overview",
+    "stack": "Tech Stack",
+    "repo": "View Repository"
+  },
+
+  "projects": [
+    {
+      "Star": true,
+      "Title": "Hydeno-Framework",
+      "Desc": "Hybrid Data Pipeline & Ensemble Optimization Framework. Includes Splink entity matching engine and an exploratory research pipeline for estimator/sampler pairing and HPO.",
+      "Skills": ["Data Pipeline", "Ensemble Models", "HPO"],
+      "Link": "https://github.com/morsoletodev/Hydeno-Framework",
+      "AddSkills": ["Python", "Splink", "Docker"],
+      "AddDesc": "After consolidating several researches on infant mortality and data integration in the context of DataSUS, I identified the need to unify and evolve these solutions into an independent and modular ecosystem. The goal was to create an environment that overcame the limitations of isolated tools and allowed for an exhaustive search for the best configuration of Machine Learning models. My responsibility was to design an end-to-end architecture capable of integrating a high-performance Entity Resolution engine into an exploratory research pipeline. The central focus was to automate the optimization of ensemble models and sampling methods, ensuring that the flow was fully reproducible for other researchers. I developed the framework in Python, structuring it as a direct evolution of the KDMiLe projects and my thesis methodologies. I implemented the data matching system using the Splink engine, significantly reducing unnecessary comparisons between records. I merged the prediction and class balancing logics, creating a pipeline capable of testing various combinations of estimators and samplers. Additionally, I introduced a Hyperparameter Optimization (HPO) layer to refine each pair of models and used Docker and Docker Compose to orchestrate the environment and ensure execution fidelity on any machine. The solution resulted in a robust framework that centralizes ingestion, data linkage, and model optimization, allowing for agile and deep analyses directly via notebooks. By ensuring reproducibility through containers, the project facilitated the continuity of research on infant mortality prediction, offering a standard of technical excellence for complex model experimentation."
+    },
+    {
+      "Star": true,
+      "Title": "etlSUS",
+      "Desc": "Opinionated data pipeline designed to facilitate the analysis of DataSUS SINASC and SIM databases, reconfigurable via YAML files.",
+      "Skills": ["Python", "ETL Pipeline", "CI/CD"],
+      "Link": "https://github.com/GOPAD-Datasus/etlSUS",
+      "AddSkills": ["PyYAML", "Pandas"],
+      "AddDesc": "The public SIM and SINASC databases require complex pre-processing steps and have documentation that makes it difficult to extract business rules. Often, this work was repeated across multiple projects, generating redundancy and loss of technical knowledge between executions. I identified the need to centralize and automate these processes to accelerate the Data Science project lifecycle and ensure consistency in analysis. I developed an independent and modular data pipeline using `.yaml` configuration files. The solution was designed to handle everything from ingestion and cleaning to file merging and automatic loading into relational databases, allowing users to customize the flow as needed. The separation of responsibilities allowed the pipeline to evolve in isolation, raising the standard of data quality. As a direct result, there was a significant reduction in time spent on ETL, allowing higher priority for the development and training of Machine Learning models."
+    },
+    {
+      "Star": true,
+      "Title": "TCC",
+      "Desc": "Code and analysis developed for the Course Completion Work (TCC) titled Risk Stratification for Infant Mortality in Brazil with Entity Matching and Clustering.",
+      "Skills": ["Python", "Clusterização", "Entity Matching"],
+      "Link": "https://github.com/morsoletodev/TCC",
+      "AddSkills": ["Splink", "Calinski Harabasz", "GaussianMixture"],
+      "AddDesc": "As a graduation project, I sought to evolve the methodologies used in previous works aiming at the analysis of infant mortality in Brazil, based on data integration and risk profile classification. The goal was to overcome the limitations of previous tools and create a risk stratification model capable of predicting unfavorable outcomes, similar to a traditional predictive model. I migrated the Entity Matching architecture from the Record Linkage Toolkit to the Splink library, achieving greater scalability in the unification of the SINASC and SIM databases. In parallel, I implemented a clustering logic as a proxy for prediction, segmenting the data into 6 distinct clusters, classified into 3 risk levels: Low (3), Medium (2), High (1). The new matching approach and the 6-group structure allowed the grouping of records that resulted in death within the high-risk group. This result allows for a granular and actionable view of the reality of deaths, offering a more robust and efficient stratification tool than preliminary methodologies."
+    },
+    {
+      "Title": "KDMiLe-Prediction",
+      "Desc": "Infant Mortality prediction based on the merge of SINASC and SIM databases through Entity Matching techniques.",
+      "Skills": ["Python", "Machine Learning", "Entity Matching"],
+      "Link": "https://github.com/GOPAD-Datasus/KDMiLe-Prediction",
+      "PaperLink": "https://sol.sbc.org.br/index.php/kdmile/article/view/37216",
+      "AddSkills": [],
+      "AddDesc": "Within the GOPAD research group, there was a challenge to validate whether Brazilian public databases, when integrated, possessed enough predictive power to anticipate infant deaths. For better validation, the study of balancing algorithms became its own project, named KDMiLe-Balancing. My responsibility was to define and implement the best prediction algorithm, refining the process of merging bases to ensure the quality of input data. I improved the Entity Matching methodology used in the Josif-Linkage project to reduce noise. Next, I developed predictive modeling using only the SINASC and SIM databases, focusing on simplicity and interpretability of hyperparameters. The model achieved satisfactory preliminary results, proving the technical feasibility of the solution. The work was accepted and published in the KDMiLe conference, consolidating the integration methodology proposed by the group."
+    },
+    {
+      "Title": "KDMiLe-Balancing",
+      "Desc": "Analysis of Oversampling, Undersampling and Hybrid  methods applied on infant mortality data from DataSUS.",
+      "Skills": ["Python", "Machine Learning", "Class Balancing"],
+      "Link": "https://github.com/GOPAD-Datasus/KDMiLe-Balancing",
+      "PaperLink": "https://sol.sbc.org.br/index.php/kdmile/article/view/37209",
+      "AddSkills": [],
+      "AddDesc": "Infant mortality data is inherently imbalanced, which compromises the performance of Machine Learning models that tend to ignore the minority class (death). This necessitated a systematic evaluation of different data balancing algorithms to identify which technique offers the best reliability and detection for the problem at hand. I conducted an exhaustive comparative study applying sampling methods to the integrated DataSUS dataset. I tested approaches such as Random Undersampling (RU), Random Oversampling (ROS), Edited Nearest Neighbors (ENN), among others. I identified that the RU method was superior for maximizing detection, ROS for ensuring model reliability, and ENN for overall balance (F1-Score). The findings were published at the KDMiLe conference, serving as a guide for future studies by the group."
+    },
+    {
+      "Title": "DOHaD-Apriori",
+      "Desc": "Association rule mining of 2023 data using the Efficient Apriori algorithm, aiming to identify maternal characteristics that may lead to adverse prenatal outcomes.",
+      "Skills": ["Python", "Machine Learning", "Data Mining"],
+      "Link": "https://github.com/morsoletodev/Dohad-Apriori",
+      "AddSkills": ["Pandas", "Association Rules"],
+      "AddDesc": "In a multidisciplinary initiative with the nursing team from GOPAD, we sought to identify maternal characteristics that directly influence the APGAR neonatal health indicator at the 5th minute. Aiming to overcome the performance limitations found in the ICISMED-Apriori project and create a workflow that allowed for technical and clinical validation of the generated association rules. I replaced the traditional algorithm with Efficient Apriori, optimizing resource consumption and allowing for more rigorous rule filtering. I worked in constant communication with health specialists to translate clinical variables into mining parameters, focusing specifically on the APGAR-5 consequent. The new architecture allowed for the extraction of rules with high clinical value, which were validated by the nursing team. The summary of the work and its findings were published in the DOHaD international conference."
+    },
+    {
+      "Title": "FIGO-Maternal",
+      "Desc": "Exploratory analysis and prediction of black maternal mortality, aiming to find racial discrepancies in obstetric care. Work presented at FIGO.",
+      "Skills": ["Python", "Machine Learning", "PowerBI"],
+      "Link": "",
+      "PaperLink": "https://obgyn.onlinelibrary.wiley.com/doi/10.1002/ijgo.70503",
+      "AddSkills": ["Pandas", "Scikit-learn"],
+      "AddDesc": "I worked on a strategic GOPAD project focused on maternal mortality, collaborating with a diverse team of professionals from the fields of computing, nursing, and administration. I had the task of meeting the group's need for dynamic visual analyses and predictive models that could accelerate scientific writing and clinical decision-making. I developed dashboards in PowerBI with segmented navigation, allowing the team to consult maternal characteristics and predictive results quickly during research meetings. In parallel, I used Scikit-learn for data modeling, maintaining an active communication channel to align technical results with the article's objectives. The agility provided by the visual reports significantly optimized the team's writing time. As a result, the work was published in the prestigious FIGO journal (International Journal of Gynecology & Obstetrics)."
+    },
+    {
+      "Title": "ICISMED-Apriori",
+      "Desc": "Association rule mining in SINASC data with a focus on identifying prenatal risk factors. The work was published in an academic book (Springer).",
+      "Skills": ["Python", "Machine Learning", "Data Mining"],
+      "Link": "https://github.com/GOPAD-Datasus/ICISMED-Apriori",
+      "PaperLink": "https://link.springer.com/chapter/10.1007/978-3-031-99699-3_25",
+      "AddSkills": ["Pandas", "mlxtend", "Association Rules"],
+      "AddDesc": "As a researcher in the Research Group on Organization, Processing and Analysis of Data (GOPAD), I conducted a study to identify relationships between maternal profiles and unfavorable obstetric/neonatal outcomes, using the public SINASC 2022 database. The central challenge was to apply data mining techniques to extract **association rules** from a large volume of data. The Apriori algorithm, implemented by the mlxtend library, presented critical performance bottlenecks, such as high memory consumption and low computational efficiency for processing numerical variables and large record sets. I developed a hybrid strategy to optimize processing. I implemented a preliminary clustering stage via K-means to segment the database into homogeneous groups, reducing the dimensionality and complexity of the itemsets passed to the Apriori algorithm. This architecture allowed me to bypass hardware limitations and significantly accelerate pattern discovery. The approach resulted in the identification of 10 crucial association rules, distributed across 6 maternal profiles that accurately describe obstetric risk factors. Due to its technical and scientific relevance, the work was accepted and published by Springer at the ICISMED international conference, validating the efficacy of the proposed methodology."
+    },
+    {
+      "Title": "Josif-Linkage",
+      "Desc": "Entity Resolution in public SINASC and SIM databases using the Record Linkage Toolkit library.",
+      "Skills": ["Python", "Entity Matching"],
+      "Link": "https://github.com/GOPAD-Datasus/JOSIF-Linkage",
+      "PaperLink": "https://josif.ifsuldeminas.edu.br/ojs/index.php/anais/article/view/2528",
+      "AddSkills": ["First Project", "Record Linkage Toolkit"],
+      "AddDesc": "As part of the Research Group on Organization, Processing and Analysis of Data (GOPAD), I worked on a preliminary integration study between public SIM and SINASC databases for infant mortality analysis. The main challenge was the absence of unique identifiers, which prevented the use of deterministic join methods. This necessitated the implementation of a probabilistic Entity Matching strategy capable of reliably unifying records, allowing for future analysis of factors influencing infant mortality. I developed a solution in Python using the Record Linkage Toolkit library. I structured the blocking strategy based on birth date and municipality of residence to optimize processing. For record comparison, I used attributes such as birth weight, type of delivery, weeks of gestation, and mother's education, ensuring the precision of the link between bases. Preliminary results revealed critical demographic disparities. The integrated base identified a 10% higher presence of adolescent mother records and a 5% increase in the identification of black and brown women. This study was published in the 17th Scientific and Technological Conference of IFSULDEMINAS."
+    }
+  ]
+}

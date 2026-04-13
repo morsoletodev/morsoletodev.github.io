@@ -16,12 +16,13 @@ const skills = [
 </script>
 
 <template>
-  <main id="sec:AboutMe" class="mx-auto grow w-full lg:p-10 p-5  lg:py-9 pt-9 pb-6 space-y-10">
-    <BaseHeader title="About Me" />
+  <main id="sec:AboutMe" class="mx-auto grow w-full lg:p-10 p-5 lg:py-9 pt-9 pb-6 space-y-10">
+    <BaseHeader :title="$t('sec_1')" />
 
     <section class="mb-8">
       <p class="text-center italic text-slate-500 text-lg mb-4">
-        "Nothing in life is to be feared, it is only to be understood. <span id="text-orange">Now is the time to understand more</span>." — Marie Curie
+        {{ $t('aboutMe.cit_1') }}<span id="text-orange">{{ $t('aboutMe.cit_2') }}</span
+        >{{ $t('aboutMe.cit_3') }}
       </p>
     </section>
 
@@ -39,32 +40,21 @@ const skills = [
     <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
       <div class="space-y-4">
         <h3 class="text-xl font-semibold">Bio</h3>
-        <p class="leading-relaxed lg:text-lg lg:text-justify">
-          <!-- The "What". -->
-          I am a <span class="font-semibold">Data Scientist</span> focused on bringing projects to life,
-          even when messy data is involved.
-          <!-- The "How". -->
-          I prefer writing <span class="font-semibold">clear code</span> over clever code, reproducibility with <span class="font-semibold">Docker</span> and <span class="font-semibold">Poetry</span>, and
-          <span class="font-semibold">simple documentatio</span>n over nothing at all.
-          <!-- The "Who". -->
-          All of this is bundled with an unhealthy obsession for coffee.
-        </p>
+        <p class="leading-relaxed lg:text-lg lg:text-justify" v-html="$t('aboutMe.bio_text')"></p>
       </div>
 
       <div class="space-y-4">
-        <h3 class="text-xl font-semibold">Education</h3>
+        <h3 class="text-xl font-semibold">{{ $t('aboutMe.edu') }}</h3>
         <ul class="list-disc list-inside lg:space-y-2 space-y-1">
           <!-- prettier-ignore -->
           <li class="lg:text-lg text-base"
-            >Master's Degree in Machine Learning and Data Mining - USP
-            <span class="relative inline-block">
-              <p id="badge" class="absolute px-1 py-0.5 rounded-sm text-xs -top-5">Ongoing!</p>
-            </span>
+            >{{ $t('aboutMe.edu_i1') }}
+            <span id="badge" class=" px-1 py-0.5 rounded-sm text-xs">{{ $t('aboutMe.edu_badge') }}</span>
           </li>
-          <li class="lg:text-lg">Bachelor's Degree in Computer Science - IFSULDEMINAS</li>
+          <li class="lg:text-lg">{{ $t('aboutMe.edu_i2') }}</li>
         </ul>
 
-        <h3 class="text-xl font-semibold text-gray-800">Let's Connect</h3>
+        <h3 class="text-xl font-semibold text-gray-800">{{ $t('aboutMe.conn') }}</h3>
 
         <div class="grid grid-cols-2 gap-4 sm:grid-cols-4">
           <a

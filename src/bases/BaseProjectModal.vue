@@ -55,7 +55,7 @@ onUnmounted(() => window.removeEventListener('keydown', handleEscape))
           <div class="py-8 px-6 space-y-6">
             <section>
               <h4 id="projectHeader" class="text-sm font-bold uppercase tracking-widest mb-2">
-                Project Overview
+                {{ $t('baseProjectModal.overview') }}
               </h4>
               <p id="projectDesc" lang="pt-br" class="leading-relaxed lg:text-lg text-md hyphens-auto">
                 {{ project.AddDesc }}
@@ -64,7 +64,7 @@ onUnmounted(() => window.removeEventListener('keydown', handleEscape))
 
             <section>
               <h4 id="techStackHeader" class="text-sm font-bold uppercase tracking-widest mb-3">
-                Stack
+                {{ $t('baseProjectModal.stack') }}
               </h4>
               <div class="flex flex-wrap gap-2">
                 <span
@@ -84,7 +84,7 @@ onUnmounted(() => window.removeEventListener('keydown', handleEscape))
                 id="linkBar"
                 class="flex-1 text-center py-3 rounded-lg font-bold transition-colors"
               >
-                View Repository
+                {{ $t('baseProjectModal.repo') }}
               </a>
             </div>
           </div>
