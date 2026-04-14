@@ -1,6 +1,6 @@
 {
   "lang": "en-US",
-  "curriculum": "../locales/Curriculum_Morsoleto_en.pdf",
+  "curriculum": "/Curriculum_Morsoleto_en.pdf",
 
   "sec_1": "About me",
   "sec_2": "Projects",
