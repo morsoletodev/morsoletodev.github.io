@@ -30,7 +30,7 @@ const isOpen = ref(false)
     <hr class="mt-4 mb-6" />
 
     <div>
-      <a href="../../public/morsoletoCV.pdf" class="p-1 px-2 rounded-sm" id="download" download
+      <a :href="$t('curriculum')" class="p-1 px-2 rounded-sm" id="download" download
         >Download CV</a
       >
     </div>
