@@ -6,19 +6,21 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
-export default defineConfig({
-  base: '/',
-  plugins: [
-    vue(), 
-    mode === 'development' && vueDevTools(), 
-    tailwindcss(),
-  ],
-  resolve: {
-    alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url)),
+export default defineConfig(({ mode }) => {
+  return {
+    base: '/',
+    plugins: [
+      vue(), 
+      mode === 'development' && vueDevTools(), 
+      tailwindcss(),
+    ],
+    resolve: {
+      alias: {
+        '@': fileURLToPath(new URL('./src', import.meta.url)),
+      },
     },
-  },
-  build: {
-    outDir: 'dist',
+    build: {
+      outDir: 'dist',
+    }
   }
 })
