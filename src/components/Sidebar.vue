@@ -11,7 +11,7 @@ const isOpen = ref(false)
       'fixed inset-y-0 left-0 z-50 w-80 h-screen p-3 text-center transition-transform duration-300 ease-in-out lg:relative lg:translate-x-0',
     ]"
   >
-    <img src="/bracis_cut.jpg" alt="Profile Picture" class="rounded-full my-3 border-3" />
+    <img src="/bracis_cut.jpg" :alt="$t('sideBar.imgAlt')" class="rounded-full my-3 border-3" />
 
     <h3 class="font-serif text-2xl font-bold mt-4">R. Morsoleto</h3>
     <p>{{ $t('sideBar.subTitle') }}</p>
